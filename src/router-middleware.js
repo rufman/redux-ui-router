@@ -28,6 +28,7 @@ export default function routerMiddleware($state) {
           payload: {
             currentState: $state.current,
             currentParams: $state.params,
+            href: $state.href,
             prevState: getState().router.currentState,
             prevParams: getState().router.currentParams,
           },
